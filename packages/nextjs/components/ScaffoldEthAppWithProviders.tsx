@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Fuul } from "@lupo0x/mysdk";
 import { RainbowKitProvider, darkTheme, lightTheme } from "@rainbow-me/rainbowkit";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
@@ -36,15 +37,24 @@ export const queryClient = new QueryClient({
   },
 });
 
+const sdkClient = new Fuul();
+
 export const ScaffoldEthAppWithProviders = ({ children }: { children: React.ReactNode }) => {
   const { resolvedTheme } = useTheme();
   const isDarkMode = resolvedTheme === "dark";
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const initAppWithProviders = async (): Promise<void> => {
+      const initAndReturnData = await sdkClient.init({
+        apiKey: "mySuperAwesomePublicApiKey",
+      });
+      //lupo0x comment: just for now, to make sure is working
+      console.log(initAndReturnData, "initAndReturnData");
+      setMounted(true);
+    };
+    initAppWithProviders();
   }, []);
-
   return (
     <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>

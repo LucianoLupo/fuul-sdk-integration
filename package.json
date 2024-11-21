@@ -27,6 +27,7 @@
     "next:format": "yarn workspace @se-2/nextjs format",
     "next:lint": "yarn workspace @se-2/nextjs lint",
     "next:serve": "yarn workspace @se-2/nextjs serve",
+    "sdk:build": "yarn workspace @lupo0x/mysdk build",
     "precommit": "lint-staged",
     "start": "yarn workspace @se-2/nextjs dev",
     "test": "yarn hardhat:test",
