@@ -75,11 +75,7 @@ export const NFTCard = ({ nft }: { nft: Collectible }) => {
             </button>
           )}
         </div>
-        <label htmlFor="fuul-modal" className="btn-sm !rounded-xl flex gap-3 py-3">
-          <span className="whitespace-nowrap">View Modal</span>
-        </label>
       </div>
-      <MyCustomModal address={connectedAddress} modalId="fuul-modal" />
     </div>
   );
 };

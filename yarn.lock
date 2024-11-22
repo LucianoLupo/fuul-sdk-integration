@@ -1048,8 +1048,8 @@ __metadata:
 
 "@lupo0x/mysdk@file:../sdk::locator=%40se-2%2Fnextjs%40workspace%3Apackages%2Fnextjs":
   version: 0.2.0
-  resolution: "@lupo0x/mysdk@file:../sdk#../sdk::hash=6c69bb&locator=%40se-2%2Fnextjs%40workspace%3Apackages%2Fnextjs"
-  checksum: 6b6b728ae3679d3bbf8a57b54d0baae26331aa650bf35c08524db5e9ad785549c4ab3cf9883798084fc7fbf49fa908ae4b48a0487670d02be50caa90c850514f
+  resolution: "@lupo0x/mysdk@file:../sdk#../sdk::hash=2d6f3c&locator=%40se-2%2Fnextjs%40workspace%3Apackages%2Fnextjs"
+  checksum: bd6156d28811c2c63af133fc60a00c9961d789ceae94f7d990533bcecf6ff922b94eb950f59c2c5dc57993097fe78e9b1c1b55aec557949d5d66ecfb5c4434d0
   languageName: node
   linkType: hard
 
@@ -6184,9 +6184,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.41":
-  version: 1.5.63
-  resolution: "electron-to-chromium@npm:1.5.63"
-  checksum: aa3d0a48753af052158ef3e46d65042b91f1934a4ab02732a0ce27429ba989dea7e4badbf991e58dff8acf5e64b967a964b61985c05ce45e03457c4f917a06f8
+  version: 1.5.64
+  resolution: "electron-to-chromium@npm:1.5.64"
+  checksum: 9a866dcd2b480fee0d3a265318b1227cbaf1ee236cbb7aa09306b7cb8a6c21c069a8001dff1183e5a85214636a04a856a7d90e0ff3860bf86c9cbc44a69f59bb
   languageName: node
   linkType: hard
 
@@ -14313,8 +14313,8 @@ __metadata:
   linkType: hard
 
 "viem@npm:^2.1.1":
-  version: 2.21.48
-  resolution: "viem@npm:2.21.48"
+  version: 2.21.49
+  resolution: "viem@npm:2.21.49"
   dependencies:
     "@noble/curves": 1.6.0
     "@noble/hashes": 1.5.0
@@ -14330,7 +14330,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 9f7f57d379203c9b53f410bc9bef69c501ae365b74bb24d0473ce657cea5ca6422b9688f3c175d9c80c90a738c9ecd013b29657e4f96804ef7489ad67a7bd387
+  checksum: 217302637880b23b53f9975a3bb98dbf6d7a27ed062619ad8359e76c6c649c7b4e30a20e1d3b177ddbe8002b0261be3f5063bb1e4d82198bf738b52c67021b91
   languageName: node
   linkType: hard
 

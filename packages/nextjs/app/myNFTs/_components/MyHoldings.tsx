@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { MyCustomModal } from "./MyCustomModal";
 import { NFTCard } from "./NFTCard";
 import { useAccount } from "wagmi";
 import { useScaffoldContract } from "~~/hooks/scaffold-eth";
@@ -76,6 +77,7 @@ export const MyHoldings = () => {
           ))}
         </div>
       )}
+      <MyCustomModal address={connectedAddress} modalId="fuul-modal" />
     </>
   );
 };

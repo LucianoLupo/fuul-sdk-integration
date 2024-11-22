@@ -3,6 +3,7 @@
 import { MyHoldings } from "./_components";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
+import { RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 
 const MyNFTs: NextPage = () => {
   const { isConnected, isConnecting } = useAccount();
@@ -17,7 +18,13 @@ const MyNFTs: NextPage = () => {
         </div>
       </div>
       {/*lupo0x comment: here should go some good looking Loader  */}
-      {!isConnected || isConnecting ? <p>Loading...</p> : <MyHoldings />}
+      {!isConnected || isConnecting ? (
+        <div className="text-center mb-8">
+          <RainbowKitCustomConnectButton />
+        </div>
+      ) : (
+        <MyHoldings />
+      )}
     </>
   );
 };
