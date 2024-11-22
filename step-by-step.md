@@ -1,3 +1,6 @@
+![image001](https://github.com/user-attachments/assets/f0180a7a-ca91-48f7-a7ac-6156db0fc2bd)
+
+
 # Step by step process for Fuul SDK integration Test/Challenge
 
 Main idea of the step by step is to share my thought process, share why I 've made some decisions and direct the focus to what I think is the most important part.
@@ -22,11 +25,11 @@ Went to a conference this month and found out this thing called [SpeedRun Ethere
 
 Went to Google for a bit:
 
-[https://huddle01.hashnode.dev/the-complete-guide-to-building-sdks](https://huddle01.hashnode.dev/the-complete-guide-to-building-sdks)
-[https://dev.to/mendoza/how-to-build-a-simple-sdk-on-typescript-21gg](https://dev.to/mendoza/how-to-build-a-simple-sdk-on-typescript-21gg)
-[https://durgadas.in/building-an-sdk-with-typescript](https://durgadas.in/building-an-sdk-with-typescript)
-[https://github.com/egoist/tsup](https://github.com/egoist/tsup)
-and more...
+ - [https://huddle01.hashnode.dev/the-complete-guide-to-building-sdks](https://huddle01.hashnode.dev/the-complete-guide-to-building-sdks)
+ - [https://dev.to/mendoza/how-to-build-a-simple-sdk-on-typescript-21gg](https://dev.to/mendoza/how-to-build-a-simple-sdk-on-typescript-21gg)
+ - [https://durgadas.in/building-an-sdk-with-typescript](https://durgadas.in/building-an-sdk-with-typescript)
+ - [https://github.com/egoist/tsup](https://github.com/egoist/tsup)
+ - and more...
 
 And after some reading I thought it will be enough for a simple SDK, started my `package.json` like this:
 
@@ -147,9 +150,11 @@ I can write more about the scaffold structue ( and probably I will... ) but for 
 
 ## Minting NFT and referral modal
 
-IMAGE HERE
+![image002](https://github.com/user-attachments/assets/81acf28c-f8db-4888-b4b3-65464f0fc7e0)
 
-IMAGE HERE
+
+![image003](https://github.com/user-attachments/assets/4fcd44eb-ea1a-47a3-924a-e77771abab18)
+
 
 here is where the magic happens:
 
