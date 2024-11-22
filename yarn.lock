@@ -1048,8 +1048,8 @@ __metadata:
 
 "@lupo0x/mysdk@file:../sdk::locator=%40se-2%2Fnextjs%40workspace%3Apackages%2Fnextjs":
   version: 0.2.0
-  resolution: "@lupo0x/mysdk@file:../sdk#../sdk::hash=f890f7&locator=%40se-2%2Fnextjs%40workspace%3Apackages%2Fnextjs"
-  checksum: ed1c3fd7f3db59553220436e91cf750d297a05772fb42afd45fc7d270b2add6752ea51c09d687988b5409940cd91246a070eb73c0db79f9674ac183ff98e7225
+  resolution: "@lupo0x/mysdk@file:../sdk#../sdk::hash=6c69bb&locator=%40se-2%2Fnextjs%40workspace%3Apackages%2Fnextjs"
+  checksum: 6b6b728ae3679d3bbf8a57b54d0baae26331aa650bf35c08524db5e9ad785549c4ab3cf9883798084fc7fbf49fa908ae4b48a0487670d02be50caa90c850514f
   languageName: node
   linkType: hard
 

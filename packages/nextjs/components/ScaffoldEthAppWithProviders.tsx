@@ -12,6 +12,7 @@ import { Footer } from "~~/components/Footer";
 import { Header } from "~~/components/Header";
 import { BlockieAvatar } from "~~/components/scaffold-eth";
 import { useInitializeNativeCurrencyPrice } from "~~/hooks/scaffold-eth";
+import { useGlobalState } from "~~/services/store/store";
 import { wagmiConfig } from "~~/services/web3/wagmiConfig";
 
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
@@ -40,21 +41,25 @@ export const queryClient = new QueryClient({
 const sdkClient = new Fuul();
 
 export const ScaffoldEthAppWithProviders = ({ children }: { children: React.ReactNode }) => {
+  const setInfoFromSDKInit = useGlobalState(({ setInfoFromSDKInit }) => setInfoFromSDKInit);
+
   const { resolvedTheme } = useTheme();
   const isDarkMode = resolvedTheme === "dark";
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const initAppWithProviders = async (): Promise<void> => {
+      if (setInfoFromSDKInit === undefined) return;
       const initAndReturnData = await sdkClient.init({
         apiKey: "mySuperAwesomePublicApiKey",
       });
-      //lupo0x comment: just for now, to make sure is working
       console.log(initAndReturnData, "initAndReturnData");
+      setInfoFromSDKInit(initAndReturnData);
       setMounted(true);
     };
     initAppWithProviders();
-  }, []);
+  }, [setInfoFromSDKInit]);
+
   return (
     <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>

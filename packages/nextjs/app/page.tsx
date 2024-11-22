@@ -23,20 +23,13 @@ const Home: NextPage = () => {
           </div>
 
           <p className="text-center text-lg">
-            Get started by editing{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/nextjs/app/page.tsx
-            </code>
+            Pretend this is an awesome company with NFTs that you can see in My NFTs page
           </p>
           <p className="text-center text-lg">
-            Edit your smart contract{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              YourContract.sol
-            </code>{" "}
-            in{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/hardhat/contracts
-            </code>
+            Which you can access from Top Bar or with{" "}
+            <Link href="/myNFTs" passHref className="link">
+              this link
+            </Link>{" "}
           </p>
         </div>
 
