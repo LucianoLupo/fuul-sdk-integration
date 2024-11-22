@@ -1,4 +1,3 @@
-import { MyCustomModal } from "./MyCustomModal";
 import { Collectible } from "./MyHoldings";
 import { formatEther, parseEther } from "viem";
 import { useAccount } from "wagmi";
@@ -24,7 +23,6 @@ export const NFTCard = ({ nft }: { nft: Collectible }) => {
     try {
       // First remove previous loading notification and then show success notification
       notification.remove(notificationId);
-      console.log(nft.id);
       await writeContractAsync({
         functionName: "mint",
         args: [BigInt(nft.id)],

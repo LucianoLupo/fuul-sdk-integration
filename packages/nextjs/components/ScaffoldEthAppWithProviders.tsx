@@ -53,7 +53,6 @@ export const ScaffoldEthAppWithProviders = ({ children }: { children: React.Reac
       const initAndReturnData = await sdkClient.init({
         apiKey: "mySuperAwesomePublicApiKey",
       });
-      console.log(initAndReturnData, "initAndReturnData");
       setInfoFromSDKInit(initAndReturnData);
       setMounted(true);
     };
